@@ -725,8 +725,8 @@ input[type="submit"]:hover { cursor: pointer }
 	display: block;
 	padding: 1.1em 1.2em;
 	text-transform: uppercase;
-	color: #ccc;
-	background: #111;
+	color: #111;
+	background: #f2f2f2;
 	border-bottom: 1px solid #252525;
 }
 #menu-secondary li a:hover {
