@@ -1,0 +1,99 @@
+/*
+Theme Name: Expositio Theme
+Author URI: http://www.wpshower.com
+Description: Expositio is a free portfolio-type WordPress theme for photographers and designers. Expositio theme allows you in several clicks to showcase your works to the whole world.
+Author: Wpshower
+Version: 1.0.0
+License: GNU/GPL Version 2 or later. http://www.gnu.org/licenses/gpl.html
+Copyright: (c) 2011 Wpshower
+*/
+
+@charset "UTF-8";
+/* CSS Document */
+
+/* Global reset of paddings and margins for all HTML elements */
+* { margin:0; padding: 0;}
+/* Correction: margin/padding reset caused too small select boxes. */
+option { padding-left: 0 0.4em; } 
+select { padding: 1px; }
+/* Global fix of the Italics bugs in IE 5.x and IE 6  */
+* html body * { overflow:visible; }
+* html iframe, * html frame { overflow:auto; }
+* html frameset { overflow:hidden; }
+html { height: 100%; }
+/* default for body */
+body { font-size:12px; color: #000;font-family: Arial, Verdana, Tahoma, Geneva, sans-serif; background: white; text-align: left; }
+
+/* 	Lists	*/
+ul li { margin:0; padding:0;}
+ul.cls-menu li, ul.menu li { list-style:none;}
+/*	Images	*/
+img, img a, a, a img { border: none; outline: none;}
+/* 	Border background	*/
+.Frame, .Ft, .Ftl, .Ftr, .Fb, .Fbl, .Fbr, .Fc  { height:1%;}
+.Frame { background-repeat:repeat-y;  background-position:center; }
+.Frame * { background-position:center; }
+.Ft { background-position:top; background-repeat:no-repeat;}
+.Fb { background-position:bottom; background-repeat:no-repeat}
+.Ftl { background-position:top left; background-repeat:no-repeat;}
+.Ftr { background-position:top right; background-repeat:no-repeat;}
+.Fbl { background-position:bottom left; background-repeat:no-repeat;}
+.Fbr { background-position:bottom right; background-repeat:no-repeat;}
+	
+/*	Common styles	*/
+/*	default for link */
+a { color:#000; background:transparent; text-decoration:none; }
+a:focus, a:hover { color:#000;  text-decoration: underline;}
+.f-left { float: left;}
+.f-right { float: right;}
+.clr { clear: both; background: url('./_css/blank.gif') repeat-x; height: 0px;}
+.notext-left { text-indent: -9999px;}
+.notext-right { text-indent: 9999px;}
+
+/*	Website styles lie beneath	*/
+body { background: white; color: #000; font-size: 13px; margin-top: 0; font-family: "Helvetica Neue", Helvetica, Arial;}
+	#wps-site-wrapper {}
+		#wps-site-inner { }
+			
+			h1 { font-size: 13px; font-weight: bold; margin-bottom: 20px; line-height: 20px;}
+			h2 { font-size: 13px; font-weight: bold; margin-bottom: 20px; line-height: 20px;}
+			h4 { font-size: 13px; font-weight: bold; line-height: 20px;}
+			h5 { font-size: 13px;}
+		
+			#wps-sidebar { position: fixed; top: 0px; left: 40px; width: 220px; padding: 60px 14px 6px 14px; z-index: 10; background: white; line-height: 20px; height: 100%; }
+				#wps-sidebar h1 { padding: 0 6px;}
+				#wps-sidebar h2 { padding: 0 6px;}
+				#wps-sidebar h4 { padding: 0 6px;}
+			
+				.wpscls-menu-main {margin-bottom: 20px;}
+					.wpscls-menu-main li { list-style: none;}
+					.wpscls-menu-main li a { padding: 1px 6px; display: block;}
+					.wpscls-menu-main li a:hover {}
+					.wpscls-menu-main li.current-menu-item a {font-weight: bold;}
+				
+				.wpscls-cate-post {margin-bottom: 20px;}
+					.wpscls-cate-post ul  { margin-bottom: 20px;}
+					.wpscls-cate-post ul li { list-style: none;}
+					.wpscls-cate-post ul li a  { padding: 1px 6px; display: block;}
+					.wpscls-cate-post ul li a:hover { }
+					.wpscls-cate-post ul li a.current  { font-weight: bold;}
+			
+			table.cls-table-gallery { margin: 60px 0 0 300px;}
+			table.wpscls-with-content { }
+				table.cls-table-gallery td { vertical-align: top; padding-right: 28px;}
+				table.cls-table-gallery td.wpscls-post-content { }
+				table.cls-table-gallery td.wpscls-post-content h2 { width: 450px; padding: 0 3px; margin-top: -2px;}
+				table.cls-table-gallery td.wpscls-post-content .wpscls-field-content { width: 450px; padding: 0 3px 16px 3px; line-height: 20px;}
+				table.cls-table-gallery td.wpscls-post-content .wpscls-field-content p { margin-bottom: 20px; }
+				table.cls-table-gallery td.wpscls-post-content .wpscls-field-content h1 { padding: 21px 0 21px 0; margin-bottom: 0; font-size: 21px; line-height: 26px;}
+				table.cls-table-gallery td.wpscls-post-content .wpscls-field-content h2 { padding: 18px 0 18px 0; margin-bottom: 0; font-size: 18px; line-height: 23px;}
+				table.cls-table-gallery td.wpscls-post-content .wpscls-field-content h3 { padding: 16px 0 16px 0; margin-bottom: 0; font-size: 16px; line-height: 21px;}
+				table.cls-table-gallery td.wpscls-post-content .wpscls-field-content img { margin: 6px 0;}
+				table.cls-table-gallery td.wpscls-post-content .wpscls-field-content img.alignright { margin-left: 8px; float: right;}
+				table.cls-table-gallery td.wpscls-post-content .wpscls-field-content img.alignleft { margin-right: 8px; float: left;}
+				table.cls-table-gallery td img {}
+				table.cls-table-gallery td h5 { font-weight: normal; line-height: 20px; margin: 10px 0 4px 0;}
+			
+			.wpscls-copyright {padding: 0px 6px;}
+			.wpscls-copyright a {}
+			.wpscls-copyright a:hover {}

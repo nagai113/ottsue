@@ -1,0 +1,271 @@
+@media screen and (max-width: 980px) {
+
+	/************************************************************************************
+	STRUCTURE
+	*************************************************************************************/
+	.pagewidth {
+		max-width: 94%;
+	}
+		
+	/* content */
+	.sidebar1 #content {
+		max-width: 67.8%;
+	}
+	
+	/* sidebar */
+	#sidebar {
+		margin: 7% 0 5%;
+		max-width: 26.2%;
+	}
+		
+	/************************************************************************************
+	GRID
+	*************************************************************************************/
+	.col4-1,
+	.col4-2,
+	.col4-3,
+	.col3-1,
+	.col3-2,
+	.col2-1
+	{
+		margin-left: 2%;
+	}
+	.first {
+		margin-left: 0;
+	}
+	.col4-1 {
+		max-width: 23%;
+	}
+	.col4-2, .col2-1 {
+		max-width: 48%;
+	}
+	.col4-3 {
+		max-width: 72%;
+	}
+	.col3-1 {
+		max-width: 31%;
+	}
+	.col3-2 {
+		max-width: 62%;
+	}
+	
+	/************************************************************************************
+	LAYOUTS
+	*************************************************************************************/
+	/* grid4 */
+	.grid4 .post {
+		width: 23.125%;
+		margin-left: 2.5%;
+	}
+
+	/* grid3 */
+	.grid3 .post {
+		width: 31%;
+		margin-left: 3.5%;
+	}
+
+	/* grid2 */
+	.grid2-thumb .post,
+	.grid2 .post {
+		width: 48%;
+		margin-left: 3.75%;
+	}
+
+}
+
+@media screen and (max-width: 760px) {
+
+	/************************************************************************************
+	STRUCTURE
+	*************************************************************************************/
+	.sidebar1 #content {
+		width: 100%;
+		max-width: 100%;
+		float: none;
+		clear: both;
+	}
+	
+	/* sidebar */
+	#sidebar {
+		width: 100%;
+		max-width: 100%;
+		float: none;
+		clear: both;
+	}
+	#sidebar .secondary {
+		width: 48%;
+	}
+	
+	/************************************************************************************
+	HEADER
+	*************************************************************************************/
+	/* reset absolute elements to static */
+	#site-logo, #site-description, #main-nav  {
+		position: static !important;
+		float: none;
+		clear: both;
+	}
+	
+	/* header */
+	#header {
+		height: auto;
+		padding-top: 20px;
+	}
+	
+	/* social widget */
+	.social-widget {
+		position: static !important;
+		padding: 10px 0;
+		float: none;
+	}
+
+	/* searchform */
+	#header #searchform {
+		left: inherit;
+		right: 0;
+		top: 20px;
+		width: 150px;
+	}
+	#header #searchform #s {
+		float: right;
+		width: 50px;
+	}
+	#header #searchform input#s:focus {
+		width: 150px;
+	}
+	
+	/* site logo */
+	#site-logo a {
+		font-size: 30px;
+	}
+
+	/* site description */
+	#site-description {
+		margin: 0 0 10px;
+	}
+	
+	/* nav bar */
+	#nav-bar {
+		display: none;
+	}
+
+	/************************************************************************************
+	MAIN NAV
+	*************************************************************************************/
+	#main-nav {
+		height: auto;
+		margin: 10px 0;
+	}
+	
+	/************************************************************************************
+	LAYOUT
+	*************************************************************************************/
+	.list-thumb-image .post-content {
+		overflow: visible;
+	}
+	.list-large-image .post-content {
+		overflow: visible;
+	}
+
+}
+
+
+@media screen and (max-width: 600px) {
+	
+	/************************************************************************************
+	LAYOUTS
+	*************************************************************************************/
+	/* grid4 */
+	.grid4 .post, .sidebar1 .grid4 .post {
+		width: 100%;
+		margin-left: 0;
+		float: none;
+	}
+
+	/* grid3 */
+	.grid3 .post, .sidebar1 .grid3 .post {
+		width: 100%;
+		margin-left: 0;
+		float: none;
+	}
+	
+	/************************************************************************************
+	POST VIDEO (css for fluid video)
+	*************************************************************************************/
+	.post-video {
+		clear: both;
+	}
+
+}
+
+@media screen and (max-width: 480px) {
+
+	/* disable webkit text size adjust (for iPhone) */
+	html {
+		-webkit-text-size-adjust: none;
+	}
+
+	/************************************************************************************
+	GRID
+	*************************************************************************************/
+	.col4-1,
+	.col4-2, .col2-1,
+	.col4-3,
+	.col3-1,
+	.col3-2	 {
+		margin-left: 0 !important;
+		width: 100% !important;
+		max-width: 100% !important;
+	}
+
+	/************************************************************************************
+	MAIN NAV
+	*************************************************************************************/
+	#main-nav a {
+		margin: 0 10px 5px 0;
+		padding: 4px 7px;
+	}
+	
+	/************************************************************************************
+	LAYOUT
+	*************************************************************************************/
+	/* loops-wrapper */
+	.loops-wrapper {
+		margin-left: 0 !important;
+		width: auto !important;
+	}
+
+	/* post */
+	.post {
+		width: 100% !important;
+		margin-left: 0 !important;
+		float: none;
+	}
+	
+	/************************************************************************************
+	POST NAV
+	*************************************************************************************/
+	.post-nav .prev, .post-nav .next {
+		display: block;
+		width: 100%;
+		clear: both;
+		margin-bottom: 10px;
+	}
+	
+	/************************************************************************************
+	COMMENTS
+	*************************************************************************************/
+	.commentlist {
+		padding-left: 0;
+	}
+	.commentlist .commententry {
+		clear: left;
+	}
+	.commentlist .avatar {
+		float: left;
+		width: 40px;
+		height: 40px;
+		margin: 0 10px 10px 0;
+	}
+
+}
