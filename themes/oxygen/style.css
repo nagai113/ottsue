@@ -720,7 +720,7 @@ input[type="submit"]:hover { cursor: pointer }
 	width: 100%;
 }
 #menu-secondary li a {
-	font-size: 0.8333333333333333em;
+	font-size: 1.0em;
 	line-height: 1.2em;
 	display: block;
 	padding: 1.1em 1.2em;
@@ -731,7 +731,7 @@ input[type="submit"]:hover { cursor: pointer }
 }
 #menu-secondary li a:hover {
 	color: #fff;
-	background: #000;
+	background: #358f7f;
 }
 #menu-secondary li.current-menu-item a { color: #555; }
 #menu-secondary li.current-menu-item li a { color: #ccc; }
@@ -992,7 +992,7 @@ input[type="submit"]:hover { cursor: pointer }
 	word-wrap: break-word;
 }
 .singular .entry-title {
-	font-size: 2em;	/* 24 / 12 = 2 */
+	font-size: 0.01em;	/* 24 / 12 = 2 */
 	margin-bottom: 0.3em;
 }
 .singular-page .entry-title { color: #ccc; }
