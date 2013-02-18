@@ -59,25 +59,12 @@ get_header(); // Loads the header.php template. ?>
 
 
 				<h4 class="section-title">お知らせ</h4>
-				<ul style="list-style:none">
-<?php query_posts('posts_per_page=5'); ?>
-<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-  <li>
-  <span class="date">
-  <?php the_time('Y年n月j日'); ?>
-  <?php
-   $days=30;
-    $today=date('U'); $entry=get_the_time('U');
-    $diff1=date('U',($today - $entry))/86400;
-    if ($days > $diff1) {
-  echo '<img src="images/new.gif" alt="New" />';
-  }
-  ?>
-  </span>
-    <a href="<?php the_permalink(); ?>"><?php the_title();?></a>
-  </li>
-  <?php endwhile; endif; ?>
-  <?php wp_reset_query(); ?>
+
+				<ul>
+<?php query_posts('posts_per_page=5&order=desc&cat=5'); ?>
+<?php while (have_posts()) : the_post(); ?>
+<li><span class="date"><?php the_time('Y.m.d') ?></span><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></li>
+<?php endwhile;wp_reset_query(); ?>
 </ul>
 
 			</div><!-- .hfeed -->
