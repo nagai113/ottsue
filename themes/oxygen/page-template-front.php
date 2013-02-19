@@ -60,10 +60,10 @@ get_header(); // Loads the header.php template. ?>
 
 				<h4 class="section-title">お知らせ</h4>
 
-				<ul>
+				<ul style="list-style:none">
 <?php query_posts('posts_per_page=5&order=desc&cat=5'); ?>
 <?php while (have_posts()) : the_post(); ?>
-<li><span class="date"><?php the_time('Y.m.d') ?></span><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></li>
+<li><span class="date"><?php the_time('Y.m.d') ?></span>&nbsp;&nbsp;<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></li>
 <?php endwhile;wp_reset_query(); ?>
 </ul>
 
