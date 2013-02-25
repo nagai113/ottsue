@@ -710,7 +710,7 @@ input[type="submit"]:hover { cursor: pointer }
 	float: left;
 	clear: left;
 	position: relative;
-	background: #111;
+	background: #fff;
 	margin-bottom: 25px;
 	z-index: 2;
 }
@@ -725,16 +725,16 @@ input[type="submit"]:hover { cursor: pointer }
 	display: block;
 	padding: 1.1em 1.2em;
 	text-transform: uppercase;
-	color: #111;
-	background: #f2f2f2;
-	border-bottom: 1px solid #252525;
+	color: #0b846e;
+	background: #fff;
+	border-bottom: 1px solid #e0e0e0;
 }
 #menu-secondary li a:hover {
 	color: #fff;
 	background: #358f7f;
 }
-#menu-secondary li.current-menu-item a { color: #555; }
-#menu-secondary li.current-menu-item li a { color: #ccc; }
+#menu-secondary li.current-menu-item a { color: #358F7F; }
+#menu-secondary li.current-menu-item li a { color: #358F7F; }
 #menu-secondary li li, #menu-secondary li li.current-menu-item li {
 	clear: both;
 	float: none;
