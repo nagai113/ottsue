@@ -579,7 +579,7 @@ input[type="submit"]:hover { cursor: pointer }
 }
 .breadcrumbs {
 	font-size: 0.9166666666666667em;
-	color: #aaa;
+	color: #444;
 	float: left;
 	width: 94.85%;
 	background: #f3f3f3;
