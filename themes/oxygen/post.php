@@ -43,7 +43,6 @@ get_header(); // Loads the header.php template. ?>
 							
 								<?php if ( current_theme_supports( 'get-the-image' ) ) get_the_image( array( 'meta_key' => 'Thumbnail', 'size' => 'single-thumbnail', 'link_to_post' => false, 'image_class' => 'featured', 'attachment' => false, 'width' => 470, 'height' => 260 ) ); ?>
 								
-								<?php echo apply_atomic_shortcode( 'byline', '<div class="byline">' . __( '[entry-published] &middot; ', 'oxygen' ) . '</div>' ); ?>
 	
 								<div class="entry-content">
 									
