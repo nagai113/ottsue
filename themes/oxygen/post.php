@@ -69,7 +69,6 @@ get_header(); // Loads the header.php template. ?>
 	
 						<?php do_atomic( 'after_singular' ); // oxygen_after_singular ?>
 	
-						<?php comments_template( '/comments.php', true ); // Loads the comments.php template. ?>
 	
 					<?php endwhile; ?>
 	
@@ -79,7 +78,6 @@ get_header(); // Loads the header.php template. ?>
 	
 			<?php do_atomic( 'close_content' ); // oxygen_close_content ?>
 	
-			<?php get_template_part( 'loop-nav' ); // Loads the loop-nav.php template. ?>
 	
 		</div><!-- #content -->
 	
